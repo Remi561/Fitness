@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #FFFADC;
+    --color-background: #191A19;
+    --color-accent: #A4DD00;
+    --font-base: "Inter", sans-serif;
+    --font-heading: "Bebas Neue", sans-serif;
+}
