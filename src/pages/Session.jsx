@@ -192,8 +192,7 @@ const Session = () => {
           <NavLink
             key={item.day}
             to={`${item.day}`}
-                className={({ isActive }) =>
-                
+            className={({ isActive }) =>
               `relative capitalize ${isActive && "after:content-[] after:bg-accent after:bottom-0 after:left-0 after:w-full after:absolute after:h-0.5"} `
             }
           >
@@ -234,6 +233,47 @@ const Session = () => {
       <div className="w-full px-4">
         <Outlet context={{ calender }} />
       </div>
+
+      <section className="w-full">
+        <header className="font-heading text-4xl text-center">
+          BMI calculator
+        </header>
+        <div className="flex items-center w-full justify-between gap-4">
+          <form action="" className="space-y-3 w-1/2">
+            <div className="space-x-7">
+              <label htmlFor="" className="capitalize mb-3">
+                weight
+              </label>
+              <div className="flex justify-between min-w-lg border border-primary">
+                <input
+                  id="weight"
+                  type="text"
+                  className="w-[95%] border-none outline-0 px-2"
+                />
+                <span className="h-full bg-accent text-primary px-2 py-2">
+                  cm
+                </span>
+              </div>
+            </div>
+            <div className="space-x-7">
+              <label htmlFor="" className="capitalize mb-5">
+                height
+              </label>
+              <div className="flex justify-between min-w-lg border border-primary">
+                <input
+                  id="height"
+                  type="text"
+                  className="w-[95%] border-none outline-0 px-2"
+                />
+                <span className="h-full bg-accent text-primary px-2 py-2">
+                  cm
+                </span>
+              </div>
+            </div>
+          </form>
+          <div className="w-1/2 bg-accent">hi</div>
+        </div>
+      </section>
     </div>
   );
 }
