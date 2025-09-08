@@ -23,10 +23,12 @@ const SalesCard = ({ item, index }) => {
           className="w-full h-full object-cover"
         />
       </div>
-
-      <div className="p-4 flex items-center justify-between">
-        <h3 className="text-lg font-semibold">{item.name}</h3>
-        <p className="text-accent font-bold">{item.price}</p>
+      <div className="p-4 space-y-3">
+        <div className=" flex items-center justify-between">
+          <h3 className="text-xl font-semibold">{item.name}</h3>
+          <p className="text-accent font-bold">{item.price}</p>
+        </div>
+        <p className="font-base line-clamp-1">{item.description}</p>
       </div>
     </motion.div>
   );

@@ -27,54 +27,62 @@ export const ProductProvider = ({ children }) => {
         }
     }
     const equipment = [
-        {
-            name: "Treadmill",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJlYWRtaWxsfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-            price: "$799",
-            description: "High-quality treadmill for cardio workouts."
-        },
-        {
-            name: "Dumbbell Set",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHVtYmJlbGx8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-            price: "$199",
-            description: "Adjustable dumbbell set for strength training."
-        },
-        {
-            name: "Exercise Bike",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXhlcmNpc2UlMjBiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-            price: "$499",
-            description: "Stationary exercise bike for home workouts."
-        },
-        {
-            name: "Yoga Mat",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8eW9nYSUyMG1hdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-            price: "$49",
-            description: "Non-slip yoga mat for all types of yoga."
-        },
-        {
-            name: "Kettlebell",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V0   dGxlYmVsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-            price: "$89",
-            description: "Versatile kettlebell for dynamic workouts."
-        },
-        {
-            name: "Pull-Up Bar",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVsbCUyMHVwJTIwYmFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-            price: "$59",
-            description: "Doorway pull-up bar for upper body strength."
-        },
-        {
-            name: "Resistance Bands",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzaXN0YW5jZSUyMGJhbmRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-            price: "$29",
-            description: "Set of resistance bands for strength training."
-        },
-        {
-            name: "Rowing Machine",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm93aW5nJTIwbWFjaGluZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-            price: "$699",
-            description: "Full-body rowing machine for cardio and strength."
-        }
+      {
+        name: "Treadmill",
+        image:
+          "https://images.unsplash.com/photo-1652364653960-1c23c208ef43?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$799",
+        description: "High-quality treadmill for cardio workouts.",
+      },
+      {
+        name: "Dumbbell Set",
+        image:
+          "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$199",
+        description: "Adjustable dumbbell set for strength training.",
+      },
+      {
+        name: "Exercise Bike",
+        image:
+          "https://images.unsplash.com/photo-1591741535018-d042766c62eb?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$499",
+        description: "Stationary exercise bike for home workouts.",
+      },
+      {
+        name: "Yoga Mat",
+        image:
+          "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$49",
+        description: "Non-slip yoga mat for all types of yoga.",
+      },
+      {
+        name: "Kettlebell",
+        image:
+          "https://images.unsplash.com/photo-1632077804406-188472f1a810?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$89",
+        description: "Versatile kettlebell for dynamic workouts.",
+      },
+      {
+        name: "Pull-Up Bar",
+        image:
+          "https://images.unsplash.com/photo-1614091245074-bbf4d04a3c32?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$59",
+        description: "Doorway pull-up bar for upper body strength.",
+      },
+      {
+        name: "Resistance Bands",
+        image:
+          "https://images.unsplash.com/photo-1584827386916-b5351d3ba34b?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$29",
+        description: "Set of resistance bands for strength training.",
+      },
+      {
+        name: "Rowing Machine",
+        image:
+          "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$699",
+        description: "Full-body rowing machine for cardio and strength.",
+      },
     ];
     return (
         

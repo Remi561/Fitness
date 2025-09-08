@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { Outlet } from 'react-router-dom'
+import { motion, AnimatePresence } from "framer-motion";
 
 const Layout = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);
@@ -10,6 +11,7 @@ const Layout = () => {
       <nav className="bg-background backdrop-blur-3xl w-full sticky top-0 z-50  ">
         <Navbar mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
       </nav>
+
       <section className="flex-1 my-10 ">
         <Outlet />
       </section>
