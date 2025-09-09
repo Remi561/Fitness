@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { scroller } from 'react-scroll'
-import Button from './button'
+import Button from './Button'
 import { motion, AnimatePresence, easeInOut } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import { useLocation, useNavigate } from 'react-router-dom'
